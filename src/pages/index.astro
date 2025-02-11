@@ -1,4 +1,5 @@
 ---
+import Footer from '../components/Footer.astro';
 import MainButton from '../components/MainButton.astro';
 import Slider from '../components/Slider.astro';
 import Layout from '../layouts/Layout.astro';
@@ -46,7 +47,7 @@ import Layout from '../layouts/Layout.astro';
 		</section>
 
 		<!-- TROVA EL TEU ESTIL -->
-		<section class="w-full flex justify-center pt-12">
+		<section class="w-full flex flex-col items-center justify-center pt-12">
 			<div class="flex flex-col sm:flex-row w-full xl:w-3/4 flex rounded-2xl yellow_bg overflow-hidden">
 				<!-- Imagen amarilla -->
 				<div class="w-2/3 sm:w-1/2 flex ml-12 sm:ml-0 justify-center">
@@ -63,13 +64,33 @@ import Layout from '../layouts/Layout.astro';
 					<MainButton text="VEURE MARQUES"/>
 				</div>
 			</div>
+
+			<!-- LOGOS -->
+			<div class="grid grid-cols-3 sm:grid-cols-6 gap-8 xl:gap-24 items-center mt-16">
+				<img src="imgs/logos/carolina_logo.png" alt="Logo carolina" class="w-52">
+				<img src="imgs/logos/etnia_logo.png" alt="Logo etnia" class="w-52">
+				<img src="imgs/logos/lacoste_logo.png" alt="Logo lacoste" class="w-52">
+				<img src="imgs/logos/nike_logo.png" alt="Logo nike" class="w-52">
+				<img src="imgs/logos/tous_logo.png" alt="Logo tous" class="w-52">
+				<img src="imgs/logos/woodys_logo.png" alt="Logo woodys" class="w-52">
+			</div>
+
+			<!-- IMAGENES DE MODELOS MARCAS-->
+			<div class="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-12 xl:gap-24 items-center mt-16">
+				<img src="imgs/marcas/jos/jos.jpg" alt="Modelo 1" class="rounded-2xl w-80 h-64 sm:h-72 md:h-96">
+				<img src="imgs/marcas/xavier_garcia/trazos-xg-23/TRAZOS XG 23_02.jpg" alt="Modelo 2" class="rounded-2xl w-80 h-64 sm:h-72 md:h-96">
+				<img src="imgs/marcas/woodys/woodys4.webp" alt="Modelo 3" class="rounded-2xl w-80 h-64 sm:h-72 md:h-96">
+				<img src="imgs/marcas/nike/nike1.webp" alt="Modelo 4" class="rounded-2xl w-80 h-64 sm:h-72 md:h-96">
+			</div>
 		</section>
 
 		<!-- LA TEVA OPTICA DE CONFIANÇA A SABADELL -->
-		<section class="pt-8">
+		<section class="pt-16">
 			<div class="flex flex-col items-center justify-center relative">
 				<img src="/imgs/sala_general.jpg" class="w-full lg:w-3/4 xl:w-2/3 h-auto rounded-2xl">
-				<div class="bg-green-900 text-white  w-full mt-4 md:mt-0 md:w-[25rem] xl:w-[35rem] bg-white rounded-2xl p-4 sm:p-8 md:absolute right-0 lg:right-10 2xl:right-40">
+				
+				<!-- Recuadro verde -->
+				<div class="bg-green-900 text-white  w-full mt-4 md:mt-0 md:w-[25rem] xl:w-[35rem] bg-white rounded-2xl p-4 sm:p-8 md:absolute right-0 lg:right-15 2xl:right-40">
 					<p class="text-3xl xl:text-4xl font-bold mb-4 xl:mb-8">La teva òptica de confiança a <span class="main_green_text">Sabadell</span></p>
 					<p class="text-sm xl:text-base mb-4 xl:mb-8">Portem més de 30 anys oferint serveis de revisió ocular per a totes les edats, venda d’ulleres de tots els tipus i models, lentilles, audifons i més productes d’alta qualitat. 
 					Ens diferencia l’atenció personalitzada que donem a cada client, la nostra experiencia amb el tracte de tot tipus de malalties oculars o auditives i el gran catàleg d’ulleres que oferim. </p>
@@ -77,5 +98,7 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 			</div>
 		</section>
+
 	</main>
+	<Footer />
 </Layout>
