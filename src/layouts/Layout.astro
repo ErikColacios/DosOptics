@@ -1,6 +1,7 @@
 ---
 import ViewTransitions from 'astro/components/ViewTransitions.astro';
 import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
 
 interface Props {
 	title: string;
@@ -29,7 +30,8 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<Navbar />
-		<slot />
+			<slot />
+		<Footer />
 	</body>
 </html>
 <style is:global>
@@ -53,6 +55,7 @@ const { title } = Astro.props;
 
 	body{
 		height: 100%;
+		scrollbar-color: red orange;
 	}
 
 	.main_green_bg{
@@ -65,6 +68,20 @@ const { title } = Astro.props;
 
 	.yellow_bg{
 		background-color: #E2B423
+	}
+
+	::-webkit-scrollbar {
+  		width: 12px;
+	}
+
+	::-webkit-scrollbar-track {
+	background: #4a7856;
+	border-radius: 12px;
+	}
+
+	::-webkit-scrollbar-thumb {
+	background: #789F0B;
+	border-radius: 12px;
 	}
 
 </style>
