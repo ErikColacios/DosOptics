@@ -6,6 +6,6 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
-  site: 'https://ErikColacios.github.com',
-  base: 'DosOptics',
+  // site: 'https://ErikColacios.github.com',
+  // base: 'DosOptics',
 });

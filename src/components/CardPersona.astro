@@ -1,0 +1,23 @@
+---
+interface Props {
+	name: string;
+	role: string;
+	titles: Array<string>;
+	imageName: string;
+}
+
+const { name, role, titles, imageName } = Astro.props;
+---
+
+<div class="flex flex-col md:flex-row rounded-2xl bg-white text-black overflow-hidden shadow mb-12">
+	<img src=`imgs/nosaltres/${imageName}` class="w-full md:w-96 xl:w-[35rem]">
+	<div class="flex flex-col justify-center md:ml-8 xl:ml-16 text-lg p-4">
+		<p class="text-3xl">{name}</p>
+		<p class="main_green_text mt-4 mb-4">{role}</p>
+		<ul class="text-sm lg:text-base">
+			{titles.map((item)=> (
+				<li>{item}</li>
+			))}
+		</ul>
+	</div>
+</div>
