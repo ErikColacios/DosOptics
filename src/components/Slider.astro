@@ -1,7 +1,3 @@
----
-    import MainButton from "./MainButton.astro";
----
-
 <script>
     import Swiper from 'swiper'
     import 'swiper/css';
@@ -11,6 +7,7 @@
     const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
+    slidesPerView: 3,
     loop: true,
 
     // If we need pagination
@@ -47,33 +44,52 @@
     
 </script>
 
-<div class="swiper bg-green-700 w-full xl:w-3/4 h-96 md:h-72 rounded-2xl text-white relative flex items-center overflow-hidden transition">
-    <div class="swiper-wrapper">
+<div class="swiper w-full xl:w-3/4 h-full text-white bg-blue-200 relative flex items-center overflow-hidden transition">
+    <div class="swiper-wrapper p-2">
         <!-- Slider content 1 -->
         <div class="swiper-slide">
-            <div class="bg-[url('imgs/Frame2.jpg')] h-full flex items-center bg-cover bg-right">
-                <div class="flex flex-col md:flex-row pl-16 sm:pl-24 md:pl-28">
-                    <div>
-                        <p class="text-5xl md:text-6xl font-bold">OFERTA</p>
-                        <p class="text-4xl md:text-5xl font-bold mb-4">Montura + Lents</p>
-                        <div class="hidden md:block">
-                            <MainButton text="SABER MÉS"/>
-                        </div>
-                    </div>
-                    <div>
-                        <p class="text-8xl md:text-9xl font-bold md:ml-12">79 €</p>
-                    </div>
-                    <div class="md:hidden mt-12">
-                        <MainButton text="SABER MÉS"/>
-                    </div>
-                    
+            <div class="main_green_bg w-96 h-96 rounded-3xl flex items-center">
+                <div class="flex flex-col pl-8 pt-12 w-full h-full">
+                    <p class="text-5xl text-shadow-lg">Muntura</p>
+                    <p class="text-4xl mb-4 text-shadow-lg">+ Lents</p>
+                    <p class="text-8xl xl:text-9xl w-64 mb-4 text-shadow-lg">79 €</p>
                 </div>
             </div>
         </div>
         <!-- Slider content 2 -->
-        <div class="swiper-slide">
-            <div class="h-full bg-[url('imgs/marcas/jos/jos1.jpg')] bg-cover bg-right flex items-center relative">
-                
+        <div class="swiper-slide h-96">
+            <div class="bg-[url(/imgs/contactologia/miyosmart2.jpg)] bg-cover bg-center w-96 h-96 rounded-3xl flex items-center">
+                <div class="flex flex-col pl-8 mb-20 w-full">
+                    <p class="text-5xl xl:text-6xl text-shadow-lg mb-8">Miyosmart</p>
+                    <p class="text-xl w-64">Lents que alenteixen la progressió de la miopia</p>
+                </div>
+            </div>
+        </div>
+        <!-- Slider content 3 -->
+        <div class="swiper-slide h-96">
+            <div class="bg-[url(/imgs/contactologia/ortok.jpg)] bg-cover bg-center w-96 h-96 rounded-3xl flex items-center">
+                <div class="flex flex-col pl-8 mb-20 w-full">
+                    <p class="text-5xl xl:text-6xl text-shadow-lg mb-8">Orto-K</p>
+                    <p class="text-xl w-64">Lents que contacte per reduir la progressió de la miopia mentre dorms</p>
+                </div>
+            </div>
+        </div>
+        <!-- Slider content 4 -->
+        <div class="swiper-slide h-96">
+            <div class="bg-purple-400 bg-cover bg-center w-96 h-96 rounded-3xl flex items-center">
+                <div class="flex flex-col pl-8 mb-20 w-full">
+                    <p class="text-5xl xl:text-6xl text-shadow-lg mb-8">Orto-K</p>
+                    <p class="text-xl w-64">Lents que contacte per reduir la progressió de la miopia mentre dorms</p>
+                </div>
+            </div>
+        </div>
+        <!-- Slider content 5 -->
+        <div class="swiper-slide h-96">
+            <div class="bg-yellow-400 bg-cover bg-center w-96 h-96 rounded-3xl flex items-center">
+                <div class="flex flex-col pl-8 mb-20 w-full">
+                    <p class="text-5xl xl:text-6xl text-shadow-lg mb-8">Orto-K</p>
+                    <p class="text-xl w-64">Lents que contacte per reduir la progressió de la miopia mentre dorms</p>
+                </div>
             </div>
         </div>
     </div>
@@ -91,7 +107,6 @@
 </div>
 
 <style>
-
     .swiper-button-next{
         width: 72px;
         height: 52px;
