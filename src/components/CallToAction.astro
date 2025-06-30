@@ -1,0 +1,14 @@
+---
+import MainButton from './MainButton.astro';
+
+interface Props {
+    title: string,
+}
+
+const { title } = Astro.props;
+---
+
+<section class="min-h-[750px] p-12 md:p-20 flex flex-col text-center justify-center items-center bg-[#EEEEEE]">
+    <h2 class="text-4xl md:text-5xl md:w-[30rem]">{title}</h2>
+    <a class="text-base mt-8 text-center" href="contacte"><MainButton text="PARLA AMB NOSALTRES"/></a>
+</section>

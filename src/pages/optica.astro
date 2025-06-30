@@ -1,9 +1,56 @@
 ---
+import CallToAction from "../components/CallToAction.astro";
+import Hero from "../components/Hero.astro";
+import MainButton from "../components/MainButton.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Óptica">
-    <div class="pt-20">
-        <p class="text-5xl ml-20">Òptica</p>
-    </div>
+<Layout title="Òptica">
+    <Hero title1="Ulleres de totes les" title2="mides i colors" backgroundImage="marcas/ana_hickmann/ana_hickmann1.jpg" text="Troba la ullera que més s’adapti a tu. A Dos Òptics podràs escollir entre un gran ventall de muntures amb diferents colors i dissenys. Treballem amb les millors marques del mercat i amb els materials d’alta qualitat per oferir un mix entre durabilitat i elasticitat."/>
+    <section class="bg-[url(/imgs/optica/optica1.jpg)] bg-cover min-h-[550px]">
+        <div class="flex flex-col xl:w-1/2 p-8 xl:p-20 2xl:p-28 text-[#626262]">
+            <h2 class="text-5xl font-bold pb-12">Muntures</h2>
+            <p>En moltes ocasions del dia a dia ens trobem que necessitem un canvi de look, i quina millor manera hi ha, que fer-nos amb unes ulleres noves? </p><br>
+            <p>Les ulleres que portem sovint són un reflex de la nostra personalitat i el nostre caràcter, de tal manera que resulten ser més que un accessori i més una forma d’expressar-nos. </p><br>
+            <p>Moltes persones tenen clar el tipus d’ullera que volen ja sigui perquè l'han vist d’un altre o perquè han tingut un amor a primera vista, però altres vegades sabem que necessitem un canvi però no com volem veure'ns, i aquí és on entrem nosaltres.</p><br>
+            <a class="text-base mt-8 text-center" href="#marques"><MainButton text="MARQUES"/></a>
+        </div>
+    </section>
+    <section class="bg-[url(/imgs/optica/optica2.jpg)] bg-cover md:bg-center min-h-[700px] pt-20">
+        <div class="flex flex-col w-full md:w-1/2 p-4 lg:p-20 2xl:p-22 text-[#626262] space-y-12">
+            <h2 class="text-5xl font-bold main_green_text">T’ajudem a triar</h2>
+            <h3 class="text-4xl font-normal">Sabem que trobar la inspiració no sempre és fàcil, per això estem aquí per ajudar-te.</h3>
+            <p>Et mostrem aquelles muntures que encaixen amb la teva personalitat i ressalten les teves faccions, perquè trobis el model perfecte per a tu.</p>
+        </div>
+    </section>
+
+    <Hero title1="Materials que combinen" title2="flexibilitat i resistència" backgroundImage="optica/titanflex_glasses.jpg" text="Les muntures que oferim compten amb materials de qualitat que proporcionen una gran flexibilitat sense penalitzar la durabilitat. Per tant, a més de tenir una gran adaptabilitat també allarguen la vida útil de la ullera."/>
+
+    <section class="min-h-[700px] p-12 md:p-20" id="marques">
+        <div class="flex flex-col text-center justify-center items-center">
+            <h2 class="text-4xl md:text-5xl md:w-1/2 xl:w-1/3 pb-8">Colaborem amb les millors marques</h2>
+            <div class="grid items-center gap-8 grid-cols-3 md:grid-cols-4 m-12 w-full xl:w-1/2">
+				<img src="/imgs/logos/etnia_logo.png" class="w-32">
+				<img src="/imgs/logos/eco_logo.jpg" class="w-32">
+				<img src="/imgs/logos/woodys_logo.png" class="w-32">
+				<img src="/imgs/logos/julia_backer_logo.jpg" class="w-32">
+
+				<img src="/imgs/logos/tous_logo.png" class="w-32">
+				<img src="/imgs/logos/ana_hickmann_logo.png" class="w-32">
+                <img src="/imgs/logos/xavier_garcia_logo.jpg" class="w-32">
+                <img src="/imgs/logos/brendel_logo.png" class="w-32">
+
+                <img src="/imgs/logos/nike_logo.png" class="w-32">
+				<img src="/imgs/logos/slastik_logo.png" class="w-32">
+                <img src="/imgs/logos/jos_logo.png" class="w-32">
+                <img src="/imgs/logos/roundten_logo.jpg" class="w-32">
+
+                <img src="/imgs/logos/oneill_logo.jpg" class="w-32">
+				<img src="/imgs/logos/tiwi_logo.jpg" class="w-32">
+                <img src="/imgs/logos/titanflex_logo.jpg" class="w-32">
+                <img src="/imgs/logos/carolina_logo.png" class="w-32">
+			</div>
+        </div>
+    </section>
+    <CallToAction title="Busques unes ulleres noves?"/>
 </Layout>
