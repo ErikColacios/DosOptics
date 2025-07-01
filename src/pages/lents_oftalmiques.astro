@@ -1,0 +1,19 @@
+---
+import CallToAction from "../components/CallToAction.astro";
+import Card from "../components/Card.astro";
+import Hero from "../components/Hero.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Lents oftàlmiques">
+    <Hero title1="Lents oftàlmiques" title2="per un confort visual" backgroundImage="optometria/33_COS.jpg" text="Des de lents altament resistents a l’impacte o l’abrasió química en cas que les necessitem per treballar, fins a lents amb filtres especials per a ulls sensibles o per conduir."/>
+    <section class="flex justify-center bg-[#F9F9F9] min-h-[550px] p-20">
+        <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3 justify-center items-center 2xl:w-4/5">
+            <Card title="Tractaments" backgroundImage="optometria/33_COS.jpg" titles={["Terapia visual", "Psicomotricitat", "Percepció visual", "Fototeràpia syntonics"]}/>
+            <Card title="Avaluacions" backgroundImage="optometria/47_COS.jpg" titles={["Pediàtrica", "Aprenentatge", "Binocular i estrabismes", "Psicomotora postural i reflexos primaris"]}/>
+            <Card title="Serveis a escoles" backgroundImage="optometria/43_COS.jpg" titles={["Prevenció visual primària: cribatges", "Xerrades i tallers per a docents", "Xerrada curs 6è campanya COOOC", "Visió i aprenentatge"]}/>
+        </div>
+    </section>
+    
+    <CallToAction title="Necessites uns nous vidres?"/>
+</Layout>
