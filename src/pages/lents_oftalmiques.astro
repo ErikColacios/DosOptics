@@ -1,17 +1,59 @@
 ---
 import CallToAction from "../components/CallToAction.astro";
-import Card from "../components/Card.astro";
 import Hero from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
+<script>
+    var titleDest = document.getElementById('titleDest');
+    var descriptionDest = document.getElementById('descriptionDest');
+
+    document.getElementById('btn1')?.addEventListener('click', () => {
+        if(titleDest && descriptionDest){
+            titleDest.innerHTML = "Lents progressives"
+            descriptionDest.innerHTML = ""
+        }
+    });
+
+    document.getElementById('btn2')?.addEventListener('click', () => {
+        if(titleDest && descriptionDest){
+            titleDest.innerHTML = "Lents ocupacionals i per presbícia incipient"
+            descriptionDest.innerHTML = "Solucions visuals específiques per a persones joves amb presbícia que tenen necessitats tecnològiques elevades (pantalles, lectura, ús intensiu digital)."
+        }
+    });
+
+    document.getElementById('btn3')?.addEventListener('click', () => {
+        if(titleDest && descriptionDest){
+            titleDest.innerHTML = "Lents de protecció laboral"
+            descriptionDest.innerHTML = ""
+        }
+    });
+
+    document.getElementById('btn4')?.addEventListener('click', () => {
+        if(titleDest && descriptionDest){
+            titleDest.innerHTML = "Lents estètiques i ergonòmiques"
+            descriptionDest.innerHTML = ""
+        }
+    });
+</script>
+
 <Layout title="Lents oftàlmiques">
-    <Hero title1="Lents oftàlmiques" title2="per un confort visual" backgroundImage="optometria/33_COS.jpg" text="Des de lents altament resistents a l’impacte o l’abrasió química en cas que les necessitem per treballar, fins a lents amb filtres especials per a ulls sensibles o per conduir."/>
-    <section class="flex justify-center bg-[#F9F9F9] min-h-[550px] p-20">
-        <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3 justify-center items-center 2xl:w-4/5">
-            <Card title="Tractaments" backgroundImage="optometria/33_COS.jpg" titles={["Terapia visual", "Psicomotricitat", "Percepció visual", "Fototeràpia syntonics"]}/>
-            <Card title="Avaluacions" backgroundImage="optometria/47_COS.jpg" titles={["Pediàtrica", "Aprenentatge", "Binocular i estrabismes", "Psicomotora postural i reflexos primaris"]}/>
-            <Card title="Serveis a escoles" backgroundImage="optometria/43_COS.jpg" titles={["Prevenció visual primària: cribatges", "Xerrades i tallers per a docents", "Xerrada curs 6è campanya COOOC", "Visió i aprenentatge"]}/>
+    <Hero title1="Lents oftàlmiques" title2="per un confort visual" backgroundImage="optica/hoya/lentes_hoya.jpg" text="Des de lents altament resistents a l’impacte o l’abrasió química en cas que les necessitem per treballar, fins a lents amb filtres especials per a ulls sensibles o per conduir."/>
+
+    <section class="flex flex-col items-center justify-center w-full pt-12">
+    <h2 class="text-4xl pb-12 md:text-5xl">Tipus de vidres</h2>
+        <div class="flex bg-[#F6F6F6] min-h-[500px] w-full">
+            <div class="flex flex-col space-y-4 w-1/2 p-12">
+                <p>A la nostra òptica oferim una àmplia gamma de lents d'última generació, pensades per cobrir les necessitats visuals més exigents, tant en l’àmbit laboral com personal.</p>
+                <button class="bg-white hover:text-white hover:bg-[#4C6663] transition p-2 w-96 rounded shadow" id="btn1" >Lents progressives</button>
+                <button class="bg-white hover:text-white hover:bg-[#4C6663] transition p-2 w-96 rounded shadow" id="btn2" >Lents ocupacionals i per presbícia incipient</button>
+                <button class="bg-white hover:text-white hover:bg-[#4C6663] transition p-2 w-96 rounded shadow" id="btn3" >Lents de protecció laboral</button>
+                <button class="bg-white hover:text-white hover:bg-[#4C6663] transition p-2 w-96 rounded shadow" id="btn4" >Lents estètiques i ergonòmiques</button>
+            </div>
+            <div class="flex flex-col justify-center w-1/2 text-white bg-center bg-cover p-8" style={`background-image: url(/imgs/optica/hoya/hoya2.jpg)`}>
+                <b class="text-[#BBFF00] pb-2 mt-20" id="titleDest">Lents ocupacionals i per presbícia incipient</b>
+                <p id="descriptionDest">Solucions visuals específiques per a persones joves amb presbícia que tenen necessitats tecnològiques elevades (pantalles, lectura, ús intensiu digital).</p>
+            </div>
         </div>
     </section>
     
