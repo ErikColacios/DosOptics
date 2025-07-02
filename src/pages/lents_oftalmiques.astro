@@ -1,38 +1,102 @@
 ---
 import CallToAction from "../components/CallToAction.astro";
 import Hero from "../components/Hero.astro";
+import SectionInfo from "../components/SectionInfo.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <script>
+    var button1 = document.getElementById('btn1')
+    var button2 = document.getElementById('btn2')
+    var button3 = document.getElementById('btn3')
+    var button4 = document.getElementById('btn4')
+    var button5 = document.getElementById('btn5')
+
     var titleDest = document.getElementById('titleDest');
     var descriptionDest = document.getElementById('descriptionDest');
+    var background = document.getElementById('background');
 
-    document.getElementById('btn1')?.addEventListener('click', () => {
+    button1?.addEventListener('click', () => {
         if(titleDest && descriptionDest){
             titleDest.innerHTML = "Lents progressives"
-            descriptionDest.innerHTML = ""
+            descriptionDest.innerHTML = "S'adapten a qualsevol distància tant de prop com de lluny i que són efectives per a problemes visuals com la miopia, la hipermetropia o l'astigmatisme."
+            button1?.classList.remove("bg-white")
+            button1?.classList.add("bg-[#4C6663]")
+            button1?.classList.add("text-white")
+
+            button2?.classList.add("bg-white", "text-black")
+            button2?.classList.remove("text-white")
+            button3?.classList.add("bg-white", "text-black")
+            button3?.classList.remove("text-white")
+            button4?.classList.add("bg-white", "text-black")
+            button4?.classList.remove("text-white")
+            button5?.classList.add("bg-white", "text-black")
+            button5?.classList.remove("text-white")
+            if(background)
+                background.style.backgroundImage = "url(imgs/optica/hoya/hoya2.jpg)"
         }
     });
 
-    document.getElementById('btn2')?.addEventListener('click', () => {
+    button2?.addEventListener('click', () => {
         if(titleDest && descriptionDest){
             titleDest.innerHTML = "Lents ocupacionals i per presbícia incipient"
-            descriptionDest.innerHTML = "Solucions visuals específiques per a persones joves amb presbícia que tenen necessitats tecnològiques elevades (pantalles, lectura, ús intensiu digital)."
+            descriptionDest.innerHTML = "Solucions visuals específiques per a entorns de treball amb alta demanda visual o per persones joves amb presbícia que tenen necessitats tecnològiques elevades (pantalles, lectura, ús intensiu digital)."
+            button2?.classList.remove("bg-white")
+            button2?.classList.add("bg-[#4C6663]")
+            button2?.classList.add("text-white")
+
+            button1?.classList.add("bg-white", "text-black")
+            button1?.classList.remove("text-white")
+            button3?.classList.add("bg-white", "text-black")
+            button3?.classList.remove("text-white")
+            button4?.classList.add("bg-white", "text-black")
+            button4?.classList.remove("text-white")
+            button5?.classList.add("bg-white", "text-black")
+            button5?.classList.remove("text-white")
+            if(background)
+                background.style.backgroundImage = "url(imgs/optica/hoya/hoya1.jpg)"
         }
     });
 
-    document.getElementById('btn3')?.addEventListener('click', () => {
+    button3?.addEventListener('click', () => {
         if(titleDest && descriptionDest){
             titleDest.innerHTML = "Lents de protecció laboral"
-            descriptionDest.innerHTML = ""
+            descriptionDest.innerHTML = "Altament resistents a l’impacte i a l’abrasió química, ideals per a entorns industrials o de treball amb risc ocular. Dissenyades per protegir i garantir una visió clara en condicions exigents."
+            button3?.classList.remove("bg-white")
+            button3?.classList.add("bg-[#4C6663]")
+            button3?.classList.add("text-white")
+
+            button1?.classList.add("bg-white", "text-black")
+            button1?.classList.remove("text-white")
+            button2?.classList.add("bg-white", "text-black")
+            button2?.classList.remove("text-white")
+            button4?.classList.add("bg-white", "text-black")
+            button4?.classList.remove("text-white")
+            button5?.classList.add("bg-white", "text-black")
+            button5?.classList.remove("text-white")
+            if(background)
+                background.style.backgroundImage = "url(imgs/audiologia/phonak4.jpg)"
         }
     });
 
-    document.getElementById('btn4')?.addEventListener('click', () => {
+    button4?.addEventListener('click', () => {
         if(titleDest && descriptionDest){
             titleDest.innerHTML = "Lents estètiques i ergonòmiques"
-            descriptionDest.innerHTML = ""
+            descriptionDest.innerHTML = "Lents més primes i lleugeres, amb disseny free-form per optimitzar el camp visual i millorar el confort. Excel·lents per a l'ús diari."
+            button4?.classList.remove("bg-white")
+            button4?.classList.add("bg-[#4C6663]")
+            button4?.classList.add("text-white")
+
+            button1?.classList.add("bg-white", "text-black")
+            button1?.classList.remove("text-white")
+            button2?.classList.add("bg-white", "text-black")
+            button2?.classList.remove("text-white")
+            button3?.classList.add("bg-white", "text-black")
+            button3?.classList.remove("text-white")
+            button5?.classList.add("bg-white", "text-black")
+            button5?.classList.remove("text-white")
+            if(background)
+                background.style.backgroundImage = "url(imgs/optica/hoya/hoya5.jpg)"
         }
     });
 </script>
@@ -40,22 +104,47 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Lents oftàlmiques">
     <Hero title1="Lents oftàlmiques" title2="per un confort visual" backgroundImage="optica/hoya/lentes_hoya.jpg" text="Des de lents altament resistents a l’impacte o l’abrasió química en cas que les necessitem per treballar, fins a lents amb filtres especials per a ulls sensibles o per conduir."/>
 
-    <section class="flex flex-col items-center justify-center w-full pt-12">
-    <h2 class="text-4xl pb-12 md:text-5xl">Tipus de vidres</h2>
-        <div class="flex bg-[#F6F6F6] min-h-[500px] w-full">
-            <div class="flex flex-col space-y-4 w-1/2 p-12">
+    <section class="flex flex-col items-center justify-center w-full pt-20">
+        <h2 class="text-4xl pb-12 md:text-5xl">Tipus de vidres</h2>
+        <div class="flex flex-col md:flex-row bg-[#F6F6F6] min-h-[500px] w-full">
+            <div class="flex flex-col space-y-4 md:w-1/2 p-6 lg:p-12">
                 <p>A la nostra òptica oferim una àmplia gamma de lents d'última generació, pensades per cobrir les necessitats visuals més exigents, tant en l’àmbit laboral com personal.</p>
-                <button class="bg-white hover:text-white hover:bg-[#4C6663] transition p-2 w-96 rounded shadow" id="btn1" >Lents progressives</button>
-                <button class="bg-white hover:text-white hover:bg-[#4C6663] transition p-2 w-96 rounded shadow" id="btn2" >Lents ocupacionals i per presbícia incipient</button>
-                <button class="bg-white hover:text-white hover:bg-[#4C6663] transition p-2 w-96 rounded shadow" id="btn3" >Lents de protecció laboral</button>
-                <button class="bg-white hover:text-white hover:bg-[#4C6663] transition p-2 w-96 rounded shadow" id="btn4" >Lents estètiques i ergonòmiques</button>
+                <button class="bg-[#4C6663] text-white hover:text-white hover:bg-[#4C6663] transition p-2 lg:w-96 rounded shadow" id="btn1" >Lents progressives</button>
+                <button class="bg-white hover:text-white hover:bg-[#4C6663] transition p-2 lg:w-96 rounded shadow" id="btn2" >Lents ocupacionals i per presbícia incipient</button>
+                <button class="bg-white hover:text-white hover:bg-[#4C6663] transition p-2 lg:w-96 rounded shadow" id="btn3" >Lents de protecció laboral</button>
+                <button class="bg-white hover:text-white hover:bg-[#4C6663] transition p-2 lg:w-96 rounded shadow" id="btn4" >Lents estètiques i ergonòmiques</button>
             </div>
-            <div class="flex flex-col justify-center w-1/2 text-white bg-center bg-cover p-8" style={`background-image: url(/imgs/optica/hoya/hoya2.jpg)`}>
-                <b class="text-[#BBFF00] pb-2 mt-20" id="titleDest">Lents ocupacionals i per presbícia incipient</b>
-                <p id="descriptionDest">Solucions visuals específiques per a persones joves amb presbícia que tenen necessitats tecnològiques elevades (pantalles, lectura, ús intensiu digital).</p>
+            <div class="relative h-96 md:h-auto md:w-1/2 text-white bg-center bg-cover" style={`background-image: url(/imgs/optica/hoya/hoya2.jpg)`} id="background">
+                <div class="left-0 absolute flex flex-col justify-center bg-black/40 w-full h-full p-8">
+                    <b class="text-[#BBFF00] pb-2 mt-20" id="titleDest">Lents progressives</b>
+                    <p id="descriptionDest" class="xl:w-1/2">S'adapten a qualsevol distància tant de prop com de lluny i que són efectives per a problemes visuals com la miopia, la hipermetropia o l'astigmatisme.</p>
+                </div>
             </div>
         </div>
     </section>
+
+    <section class="flex flex-col md:flex-row items-center justify-center w-full bg-[#4C6663] text-white p-8 lg:p-12 md:space-x-12">
+        <div class="flex flex-col md:w-2/3 2xl:w-1/3">
+            <h2 class="text-4xl pb-12 md:text-5xl">Filtres especials i tractaments</h2>
+            <ul class="flex flex-col space-y-3">
+                <li class="relative flex items-center">
+                    <span class="absolute main_green_bg w-4 h-4 rounded-full"></span>
+                    <p class="pl-8">Tractaments superficials o massius per millorar la transmissió de llum i filtrar la llum nociva.</p>
+                </li>
+                <li class="relative flex items-center">
+                    <span class="absolute main_green_bg w-4 h-4 rounded-full"></span>
+                    <p class="pl-8">Filtres específics per augmentar la sensibilitat al contrast, molt útils per a la conducció o feines de precisió.</p>
+                </li>
+                <li class="relative flex items-center">
+                    <span class="absolute main_green_bg w-4 h-4 rounded-full"></span>
+                    <p class="pl-8">Disponibles en versions polaritzades (per reduir reflexos) i fotocromàtiques (que s’adapten a la llum ambiental).</p>
+                </li>           
+            </ul>
+        </div>
+        <img src="imgs/optica/hoya/frame_filtros.jpg" class="md:w-96 rounded-2xl">
+        </div>
+    </section>
+    <SectionInfo title="Lents per frenar la miopia" backgroundImage="optica/hoya/hoya7.jpg" text="Gràcies a la tecnologia MiYOSMART, podem frenar l’avenç de la miopia en nens de forma efectiva sense cap tractament invasiu. Amb aquests vidres, aconseguim corregir el defecte visual de tota la superfície amb una àrea de tractament en forma d’anell, el qual provoca un enfocament i desenfocament simultani que tracta la miopia sense que l’usuari noti res."/>
     
     <CallToAction title="Necessites uns nous vidres?"/>
 </Layout>

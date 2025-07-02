@@ -1,0 +1,21 @@
+---
+import MainButton from './MainButton.astro';
+
+interface Props {
+    title: string,
+    backgroundImage: string;
+    text: string;
+}
+
+const { title, backgroundImage, text } = Astro.props;
+---
+
+<section class="relative flex items-center justify-center w-full min-h-[850px] pt-20 bg-cover bg-center" style=`background-image: url(/imgs/${backgroundImage})`>
+    <div class="flex flex-col items-center justify-center absolute top-0 bg-black/40 text-white w-full h-full p-4 md:p-12 flex xl:justify-center items-center">
+        <div class="flex flex-col items-center text-4xl md:text-6xl bg-[#4C6663]/70 rounded-3xl p-4 md:p-12">
+            <h2 class="text-center">{title}</h2>
+            <p class="text-base md:w-[750px] mt-8">{text}</p>
+            <a class="text-base mt-8" href="nosaltres"><MainButton text="MÉS INFORMACIÓ"/></a>
+        </div>
+    </div>
+</section>
