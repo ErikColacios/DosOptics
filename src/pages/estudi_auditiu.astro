@@ -43,6 +43,7 @@ import Layout from "../layouts/Layout.astro";
     var button3 = document.getElementById('btn3')
     var button4 = document.getElementById('btn4')
     var button5 = document.getElementById('btn5')
+    var button6 = document.getElementById('btn6')
 
     var titleDest = document.getElementById('titleDest');
     var descriptionDest = document.getElementById('descriptionDest');
@@ -64,6 +65,8 @@ import Layout from "../layouts/Layout.astro";
             button4?.classList.remove("text-white")
             button5?.classList.add("bg-white", "text-black")
             button5?.classList.remove("text-white")
+            button6?.classList.add("bg-white", "text-black")
+            button6?.classList.remove("text-white")
             if(background)
                 background.style.backgroundImage = "url(imgs/optica/hoya/hoya2.jpg)"
         }
@@ -85,6 +88,8 @@ import Layout from "../layouts/Layout.astro";
             button4?.classList.remove("text-white")
             button5?.classList.add("bg-white", "text-black")
             button5?.classList.remove("text-white")
+            button6?.classList.add("bg-white", "text-black")
+            button6?.classList.remove("text-white")
             if(background)
                 background.style.backgroundImage = "url(imgs/optica/hoya/hoya1.jpg)"
         }
@@ -106,6 +111,8 @@ import Layout from "../layouts/Layout.astro";
             button4?.classList.remove("text-white")
             button5?.classList.add("bg-white", "text-black")
             button5?.classList.remove("text-white")
+            button6?.classList.add("bg-white", "text-black")
+            button6?.classList.remove("text-white")
             if(background)
                 background.style.backgroundImage = "url(imgs/audiologia/phonak4.jpg)"
         }
@@ -127,8 +134,54 @@ import Layout from "../layouts/Layout.astro";
             button3?.classList.remove("text-white")
             button5?.classList.add("bg-white", "text-black")
             button5?.classList.remove("text-white")
+            button6?.classList.add("bg-white", "text-black")
+            button6?.classList.remove("text-white")
             if(background)
                 background.style.backgroundImage = "url(imgs/optica/hoya/hoya5.jpg)"
+        }
+    });
+
+    button5?.addEventListener('click', () => {
+    if(titleDest && descriptionDest){
+        titleDest.innerHTML = "Lents estètiques i ergonòmiques"
+        descriptionDest.innerHTML = "Lents més primes i lleugeres, amb disseny free-form per optimitzar el camp visual i millorar el confort. Excel·lents per a l'ús diari."
+        button5?.classList.remove("bg-white")
+        button5?.classList.add("bg-[#4C6663]")
+        button5?.classList.add("text-white")
+
+        button1?.classList.add("bg-white", "text-black")
+        button1?.classList.remove("text-white")
+        button2?.classList.add("bg-white", "text-black")
+        button2?.classList.remove("text-white")
+        button3?.classList.add("bg-white", "text-black")
+        button3?.classList.remove("text-white")
+        button4?.classList.add("bg-white", "text-black")
+        button4?.classList.remove("text-white")
+        button6?.classList.add("bg-white", "text-black")
+        button6?.classList.remove("text-white")
+        if(background)
+            background.style.backgroundImage = "url(imgs/optica/hoya/hoya5.jpg)"
+        }
+    });
+
+    button6?.addEventListener('click', () => {
+    if(titleDest && descriptionDest){
+        titleDest.innerHTML = "Lents estètiques i ergonòmiques"
+        descriptionDest.innerHTML = "Lents més primes i lleugeres, amb disseny free-form per optimitzar el camp visual i millorar el confort. Excel·lents per a l'ús diari."
+        button6?.classList.remove("bg-white")
+        button6?.classList.add("bg-[#4C6663]")
+        button6?.classList.add("text-white")
+
+        button1?.classList.add("bg-white", "text-black")
+        button1?.classList.remove("text-white")
+        button2?.classList.add("bg-white", "text-black")
+        button2?.classList.remove("text-white")
+        button3?.classList.add("bg-white", "text-black")
+        button3?.classList.remove("text-white")
+        button5?.classList.add("bg-white", "text-black")
+        button5?.classList.remove("text-white")
+        if(background)
+            background.style.backgroundImage = "url(imgs/optica/hoya/hoya5.jpg)"
         }
     });
 </script>
@@ -193,8 +246,8 @@ import Layout from "../layouts/Layout.astro";
     </section>
 
     <section class="relative min-h-[850px] pt-20 bg-cover bg-center" style=`background-image: url(/imgs/audiologia/phonak5.jpg)`>
-        <div class="absolute top-0 flex flex-col items-center justify-center bg-black/50 text-white h-full p-8">
-            <div class="flex flex-col items-center text-4xl md:text-5xl bg-[#4C6663]/70 rounded-3xl p-4 md:p-8">
+        <div class="absolute top-0 flex flex-col items-center justify-center bg-black/50 text-white w-full h-full p-8">
+            <div class="flex flex-col items-center text-4xl md:text-5xl lg:w-1/2 bg-[#4C6663]/70 rounded-3xl p-4 md:p-8">
                 <h2 class="text-center">Acompanyament i seguiment</h2>
                 <p class="text-base mt-8">Realitzarem revisions periòdiques per assegurar el correcte funcionament dels teus audiòfons i adaptar-los a les teves necessitats, ja sigui per manteniment i ajustaments, canvis de filtres o bé revisions de confort i eficiència.</p>
                 <p class="main_green_text text-base mt-8">Et sentiràs acompanyat i avaluat de manera contínua, amb la tranquil·litat de saber que ens ocupem per tu de la teva salut auditiva.</p>
