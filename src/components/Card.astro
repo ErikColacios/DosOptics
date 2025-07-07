@@ -8,8 +8,8 @@ interface Props {
 const { title, backgroundImage, titles } = Astro.props;
 ---
 
-<div class="w-96 h-[28rem] rounded-2xl text-[#626262] bg-white overflow-hidden shadow">
-    <img src=`/imgs/${backgroundImage}` class="w-full h-[15rem]">
+<div class="w-80 xl:w-96 h-[28rem] rounded-2xl text-[#626262] bg-white overflow-hidden shadow">
+    <img src=`/imgs/${backgroundImage}` class="w-full h-[13rem] xl:h-[15rem]">
     <div class="p-8">
         <h3 class="text-3xl font-bold mb-4">{title}</h3>
         <ul class="text-sm lg:text-base list-disc pl-4">

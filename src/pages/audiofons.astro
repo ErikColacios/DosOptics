@@ -1,0 +1,35 @@
+---
+import CallToAction from "../components/CallToAction.astro";
+import Hero from "../components/Hero.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Dos Òptics | Audiòfons">
+    <Hero title1="Audiòfons" title2="per al teu dia a dia" backgroundImage="audiologia/phonak6.jpg" text="Torna a escoltar com ho feies abans amb uns audiòfons d’una qualitat immillorable. Trobaràs el teu model adequat, ja sigui si estàs buscant algo més aviat discret o més cridaner. També pots demanar uns audiòfons amb xip d’intel·ligència artificial integrat per comptar amb una qualitat auditiva diferencial."/>
+    <section class="flex flex-col sm:flex-row justify-center items-center space-x-8 lg:space-x-24 p-8 lg:p-20 w-full">
+        <div class="flex flex-col w-1/2">
+            <h2 class="pb-8 text-4xl md:text-5xl">Una qualitat sonora excepcional</h2>
+            <p>Recupera la teva capacitat auditiva amb uns audifòns que marquen la diferencia. 
+                Ofereixen una claredat verbal perfecta desde qualsevol direcció i independentment del lloc on et trobis, ja sigui al metro, a un restaurant o a l’oficina. </p>
+        </div>
+        <img src="imgs/audiologia/audiofon.png" alt="Audiòfon" class="w-full sm:w-64 md:w-96">
+    </section>
+
+    <section class="relative flex flex-col sm:flex-row justify-center items-center space-x-8 text-right lg:space-x-24 p-8 lg:p-20 w-full min-h-[550px] bg-cover bg-center" style=`background-image: url(/imgs/audiologia/deepsonic_xl.jpg)`>
+        <div class="flex flex-col items-end absolute top-0 bg-black/40 text-white w-full h-full p-4 md:p-12 justify-center">
+            <div class="lg:w-1/2">
+                <h2 class="pb-8 lg:pb-14 text-4xl md:text-5xl">Amb intel·ligència artificial integrada</h2>
+                <p>Si vols anar un pas més lluny, demana el teu audiòfon amb xip d’intel·ligència artificial integrada. Aquesta millora permet separar el soroll de la parla humana, de tal manera que comptaràs amb una escolta optimitzada i amb una nitidesa mai vista.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative flex flex-col items-center p-4 pt-16 sm:p-12 xl:p-20">
+        <img src="imgs/audiologia/audiofons_colors.jpg" class="xl:w-3/5">
+        <div class="flex flex-col md:absolute left-10 xl:left-20 bottom-5 lg:pb-20 lg:pl-20 xl:pb-30 lg:w-1/2">
+            <h2 class="pb-8 text-4xl sm:text-5xl">De totes les <span class="main_green_text font-bold">mides i colors</span></h2>
+            <p>Independentment de si vols algo més o menys discret, estem segurs que acabaràs trobant el que més s’assembla a l’audiòfon que busques.</p>
+        </div>
+    </section>
+    <CallToAction title="Tens dubtes sobre quin audiòfon escollir?"/>
+</Layout>
