@@ -1,0 +1,84 @@
+---
+import CallToAction from "../components/CallToAction.astro";
+import Hero from "../components/Hero.astro";
+import MainButton from "../components/MainButton.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Dos Òptics | Contactologia">
+    <Hero title1="Lents de contacte" title2="adaptades al teu ull" backgroundImage="contactologia/contactologia1.jpg" text="Una visió clara i còmoda comença amb un disseny fet per a tu. Estudiem la forma exacta del teu ull per donar-te unes lentilles que et siguin còmodes i s’adaptin a les teves necessitats."/>
+    <section class="flex flex-col justify-center items-center p-8 lg:p-20 w-full">
+        <h2 class="pb-8 text-4xl md:text-5xl">Lents de contacte</h2>
+        <div class="flex flex-col items-center justify-center md:flex-row space-x-8 md:p-12">
+            <div class="flex flex-col md:w-2/3 2xl:w-1/3">
+                <h3 class="text-2xl md:text-3xl pb-4">Disposem d’una àmplia varietat de lents de contacte per adaptar-nos a cada tipus de correcció visual i a les particularitats de cada pacient.</h3>
+                <p>Comptem amb lentilles progressives o lentilles per controlar la miopia de nens i adolescents.</p>
+            </div>
+             <img src="imgs/contactologia/lentillas2.jpg" alt="Lentilles" class="h-52 w-72">
+        </div>
+    </section>
+
+    <section class="flex flex-col md:flex-row items-center justify-center w-full bg-[#4C6663] text-white p-8 lg:p-12 md:space-x-12">
+        <div class="flex flex-col md:w-2/3 2xl:w-1/3">
+            <h2 class="main_green_text font-bold text-4xl md:text-5xl">Lents GP</h2>
+            <h2 class="text-4xl pb-12 md:text-5xl">(semirígides) per casos com:</h2>
+            <ul class="flex flex-col space-y-3">
+                <li class="relative flex items-center">
+                    <span class="absolute main_green_bg w-4 h-4 rounded-full"></span>
+                    <p class="pl-8">Còrnies irregulars</p>
+                </li>
+                <li class="relative flex items-center">
+                    <span class="absolute main_green_bg w-4 h-4 rounded-full"></span>
+                    <p class="pl-8">Intolerància a les lents toves</p>
+                </li>
+                <li class="relative flex items-center">
+                    <span class="absolute main_green_bg w-4 h-4 rounded-full"></span>
+                    <p class="pl-8">Abans i després d’intervencions per queratoconus</p>
+                </li>
+                <li class="relative flex items-center">
+                    <span class="absolute main_green_bg w-4 h-4 rounded-full"></span>
+                    <p class="pl-8">Correcció de defectes refractius complexos</p>
+                </li>    
+            </ul>
+            <p class="pt-12">Aquest tipus de lents ofereixen una excel·lent qualitat visual i una gran estabilitat, sent una opció molt eficaç en situacions on altres lents no són viables.</p>
+        </div>
+            <img src="imgs/contactologia/ortok2.jpg" class="md:w-96 rounded-2xl mt-12 md:mt-0" alt="Lents GP">
+        </div>
+    </section>
+
+    <section class="relative flex flex-col sm:flex-row justify-center items-center space-x-8 lg:space-x-24 p-8 lg:p-20 w-full min-h-[750px] bg-cover bg-center" style=`background-image: url(/imgs/optometria/19_COS.jpg)`>
+        <div class="flex flex-col absolute top-0 bg-black/70 text-white w-full h-full p-4 md:p-12 justify-center">
+            <div class="lg:w-1/2">
+                <h2 class="pb-8 lg:pb-14 text-4xl md:text-5xl">Disseny personalitzat de <span class="main_green_text font-bold">lents amb topografia corneal</span></h2>
+                <p>Realitzem topografies corneals per obtenir una imatge precisa i detallada de la superfície de la còrnia. Aquesta informació ens permet dissenyar lents de contacte completament a mida, adaptades a la forma única dels teus ulls.</p>
+                <p class="pt-8 pb-8">Gràcies a aquesta tecnologia, podem:</p>
+                <ul class="flex flex-col space-y-3">
+                    <li class="relative flex items-center">
+                        <span class="absolute main_green_bg w-4 h-4 rounded-full"></span>
+                        <p class="pl-8">Millorar l’adaptació i la comoditat de les lents</p>
+                    </li>
+                    <li class="relative flex items-center">
+                        <span class="absolute main_green_bg w-4 h-4 rounded-full"></span>
+                        <p class="pl-8">Optimitzar al màxim la teva visió</p>
+                    </li>
+                    <li class="relative flex items-center">
+                        <span class="absolute main_green_bg w-4 h-4 rounded-full"></span>
+                        <p class="pl-8">Oferir solucions personalitzades en casos complexos (com còrnies irregulars o queratocon)</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative flex items-center justify-center w-full min-h-[850px] pt-20 bg-cover bg-center" style=`background-image: url(/imgs/contactologia/durmiendo.jpg)`>
+        <div class="absolute flex flex-col items-center justify-center top-0 bg-black/40 text-white w-full h-full p-4 md:p-12 xl:justify-center">
+            <div class="flex flex-col justify-center items-center text-4xl sm:text-5xl md:text-6xl bg-[#4C6663]/70 rounded-3xl p-6 md:p-12 md:w-[40rem]">
+                <h2 class="text-center mb-8">Correcció visual <span class="main_green_text font-bold">mentre dorms</span></h2>
+                <h3 class="text-2xl md:text-3xl">El Sistema Orto-K (ortoqueratologia) és una tècnica avançada que permet frenar la progressió de la miopia de forma segura i no invasiva.</h3>
+                <p class="text-base mt-6">Consisteix en portar lents de contacte especials durant la nit, mentre dorms. Aquestes lents modelen suaument la superfície de la còrnia, de manera que durant el dia pots gaudir d’una visió clara i nítida sense necessitat de portar ulleres ni lents de contacte.</p>
+                <a class="text-base mt-8" href="nosaltres"><MainButton text="MÉS INFORMACIÓ"/></a>
+            </div>
+        </div>
+    </section>
+    <CallToAction title="Vols provar unes lents de contacte?"/>
+</Layout>

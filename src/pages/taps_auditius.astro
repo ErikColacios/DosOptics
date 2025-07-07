@@ -1,0 +1,33 @@
+---
+import CallToAction from "../components/CallToAction.astro";
+import Hero from "../components/Hero.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Dos Òptics | Taps auditius">
+    <Hero title1="Taps protectors" title2="Auditius" backgroundImage="audiologia/phonak7.jpg" text="A Dos Òptics també oferim taps de protecció auditiva. Aquests taps, a part de ser personalitzables i estar fets a mida per a cada persona, tenen moltes aplicacions."/>
+    <section class="flex flex-col md:flex-row items-center justify-center md:space-x-12 w-full p-8 pt-20 pb-20">
+        <div class="md:w-1/2 xl:w-1/3 flex flex-col">
+            <h2 class="main_green_text text-4xl pb-6 md:text-5xl">Perfectament adaptats</h2>
+            <h3 class="text-3xl pb-4">Els taps auditius tanquen completament el canal auditiu per oferir un aïllament quasi absolut. </h3>
+            <p>Per aconseguir aquest resultat, prenem mesura del teu canal auditiu mitjançant l’ús d’un motlle de cera que s’introdueix per l'orella, i al cap de pocs minuts s’extreu de nou. Un cop ha transcorregut una estona, el motlle s'asseca i tenim una mostra exacta del teu canal auditiu i aleshores podem fabricar els taps a partir d’aquesta base.</p>
+        </div>
+        <div class="pt-12 md:pt-0">
+            <img src="imgs/audiologia/audiologia1_sm.jpg" alt="Audiologia 1" class="w-80 rounded-2xl rotate-[-0.142rad] lg:ml-16">
+            <img src="imgs/audiologia/phonak1_sm.jpg" alt="Audiologia 2" class="w-80 rounded-2xl rotate-[0.142rad]">
+        </div>
+    </section>
+
+    <section class="bg-[#4C6663] flex flex-col md:flex-row items-center justify-center md:space-x-12 w-full p-8 pt-20 pb-20">
+        <div class="md:w-1/2 text-white flex flex-col">
+            <h2 class="main_green_text text-4xl pb-6 md:text-5xl">Utilitats variades</h2>
+            <h3 class="text-3xl pb-4">No només són una bona protecció per a l’aigua de la platja o de la piscina. </h3>
+            <p>També resulten ideals per a dormir o bé per protegir la oïda de sorolls forts. Són molt útils per a persones amb tendència a patir d’infeccions a l’oïda o per  persones amb drenatges timpànics.</p>
+        </div>
+        <div class="pt-12 md:pt-0">
+            <img src="imgs/audiologia/phonak4_sm.jpg" alt="Phonak 4" class="w-80 rounded-2xl rotate-[0.350rad] lg:ml-16">
+            <img src="imgs/audiologia/phonak8_sm.jpg" alt="Phonak 8" class="w-80 rounded-2xl rotate-[-0.102rad]">
+        </div>
+    </section>
+    <CallToAction title="Tens més dubtes?"/>
+</Layout>
