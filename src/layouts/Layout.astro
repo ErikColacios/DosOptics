@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
+import CookieConsent from "../components/CookieConsent.astro";
 
 interface Props {
 	title: string;
@@ -25,66 +26,10 @@ const { title } = Astro.props;
 		<link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
 		<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 	</head>
-	
-	<Navbar />
 		<body>
+			<Navbar />
 			<slot />
+			<Footer />
+			<CookieConsent/>
 		</body>
-	<Footer />
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family:"Inter", serif;
-		font-optical-sizing: auto;
-		font-weight: 500;
-		font-style: normal;	
-		scroll-behavior: smooth;
-	}
-
-	body{
-		height: 100%;
-		scrollbar-color: red orange;
-	}
-
-	.main_green_bg{
-        background-color: #8EB81C;
-    }
-
-	.main_green_text{
-        color: #8EB81C;
-    }
-
-	.secondary_green_bg{
-		background-color: #4C6663;
-	}
-
-	.yellow_bg{
-		background-color: #E2B423
-	}
-
-	::-webkit-scrollbar {
-  		width: 12px;
-	}
-
-	::-webkit-scrollbar-track {
-	background: #4a7856;
-	border-radius: 12px;
-	}
-
-	::-webkit-scrollbar-thumb {
-	background: #789F0B;
-	border-radius: 12px;
-	}
-
-</style>

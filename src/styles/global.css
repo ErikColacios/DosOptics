@@ -2,6 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(
+        45deg,
+        rgb(var(--accent)),
+        rgb(var(--accent-light)) 30%,
+        white 60%
+    );
+}
+
+html {
+    font-family:"Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;	
+    scroll-behavior: smooth;
+}
+
+.main_green_bg{
+    background-color: #8EB81C;
+}
+
+.main_green_text{
+    color: #8EB81C;
+}
+
+.secondary_green_bg{
+    background-color: #4C6663;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+background: #4a7856;
+}
+
+::-webkit-scrollbar-thumb {
+background: #789F0B;
+border-radius: 12px;
+}
+
 .main_button{
     color: white;
     width: 15rem;

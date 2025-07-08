@@ -44,6 +44,8 @@ import Layout from "../layouts/Layout.astro";
     var button4 = document.getElementById('btn4')
     var button5 = document.getElementById('btn5')
     var button6 = document.getElementById('btn6')
+    var button7 = document.getElementById('btn7')
+    var button8 = document.getElementById('btn8')
 
     var titleDest = document.getElementById('titleDest');
     var descriptionDest = document.getElementById('descriptionDest');
@@ -51,8 +53,8 @@ import Layout from "../layouts/Layout.astro";
 
     button1?.addEventListener('click', () => {
         if(titleDest && descriptionDest){
-            titleDest.innerHTML = "Lents progressives"
-            descriptionDest.innerHTML = "S'adapten a qualsevol distància tant de prop com de lluny i que són efectives per a problemes visuals com la miopia, la hipermetropia o l'astigmatisme."
+            titleDest.innerHTML = "Videotoscopia"
+            descriptionDest.innerHTML = "Podràs veure en directe l’exploració del teu canal auditiu, enregistrem imatges, si cal per adjuntar al teu informe."
             button1?.classList.remove("bg-white")
             button1?.classList.add("bg-[#4C6663]")
             button1?.classList.add("text-white")
@@ -68,14 +70,14 @@ import Layout from "../layouts/Layout.astro";
             button6?.classList.add("bg-white", "text-black")
             button6?.classList.remove("text-white")
             if(background)
-                background.style.backgroundImage = "url(imgs/optica/hoya/hoya2.jpg)"
+                background.style.backgroundImage = "url(imgs/audiologia/phonak3.jpg)"
         }
     });
 
     button2?.addEventListener('click', () => {
         if(titleDest && descriptionDest){
-            titleDest.innerHTML = "Lents ocupacionals i per presbícia incipient"
-            descriptionDest.innerHTML = "Solucions visuals específiques per a entorns de treball amb alta demanda visual o per persones joves amb presbícia que tenen necessitats tecnològiques elevades (pantalles, lectura, ús intensiu digital)."
+            titleDest.innerHTML = "Audiometria tonal liminal via aerea"
+            descriptionDest.innerHTML = "Prova acurada del que escoltes per via aèrea  amb cascos o amb auriculars d’inserció i el que arribes a escoltar més fi en cada freqüència de l’espectre audible humà."
             button2?.classList.remove("bg-white")
             button2?.classList.add("bg-[#4C6663]")
             button2?.classList.add("text-white")
@@ -91,14 +93,14 @@ import Layout from "../layouts/Layout.astro";
             button6?.classList.add("bg-white", "text-black")
             button6?.classList.remove("text-white")
             if(background)
-                background.style.backgroundImage = "url(imgs/optica/hoya/hoya1.jpg)"
+                background.style.backgroundImage = "url(imgs/audiologia/phonak1.jpg)"
         }
     });
 
     button3?.addEventListener('click', () => {
         if(titleDest && descriptionDest){
-            titleDest.innerHTML = "Lents de protecció laboral"
-            descriptionDest.innerHTML = "Altament resistents a l’impacte i a l’abrasió química, ideals per a entorns industrials o de treball amb risc ocular. Dissenyades per protegir i garantir una visió clara en condicions exigents."
+            titleDest.innerHTML = "Audiometria tonal liminal via òssia"
+            descriptionDest.innerHTML = "Prova acurada del que escoltes per via òssia i el que arribes a escoltar més fi en cada freqüència de l’espectre audible a través d’una diadema auditiva que transmet el so per vibració."
             button3?.classList.remove("bg-white")
             button3?.classList.add("bg-[#4C6663]")
             button3?.classList.add("text-white")
@@ -114,14 +116,14 @@ import Layout from "../layouts/Layout.astro";
             button6?.classList.add("bg-white", "text-black")
             button6?.classList.remove("text-white")
             if(background)
-                background.style.backgroundImage = "url(imgs/audiologia/phonak4.jpg)"
+                background.style.backgroundImage = "url(imgs/audiologia/phonak6.jpg)"
         }
     });
 
     button4?.addEventListener('click', () => {
         if(titleDest && descriptionDest){
-            titleDest.innerHTML = "Lents estètiques i ergonòmiques"
-            descriptionDest.innerHTML = "Lents més primes i lleugeres, amb disseny free-form per optimitzar el camp visual i millorar el confort. Excel·lents per a l'ús diari."
+            titleDest.innerHTML = "UCL - Llindar de discomfort"
+            descriptionDest.innerHTML = "També ens interessa saber quins son els sons que et molesten, així ajustarem els teus audiòfons i mai rebràs sons molestos ni que provoquin dany acústic."
             button4?.classList.remove("bg-white")
             button4?.classList.add("bg-[#4C6663]")
             button4?.classList.add("text-white")
@@ -137,14 +139,14 @@ import Layout from "../layouts/Layout.astro";
             button6?.classList.add("bg-white", "text-black")
             button6?.classList.remove("text-white")
             if(background)
-                background.style.backgroundImage = "url(imgs/optica/hoya/hoya5.jpg)"
+                background.style.backgroundImage = "url(imgs/audiologia/phonak7.jpg)"
         }
     });
 
     button5?.addEventListener('click', () => {
     if(titleDest && descriptionDest){
-        titleDest.innerHTML = "Lents estètiques i ergonòmiques"
-        descriptionDest.innerHTML = "Lents més primes i lleugeres, amb disseny free-form per optimitzar el camp visual i millorar el confort. Excel·lents per a l'ús diari."
+        titleDest.innerHTML = "Logoaudiometria"
+        descriptionDest.innerHTML = "Aquesta prova ens interessa per entendre com és la teva intel·ligibilitat en cada barem d’intensitat sonora en decibels dB. Ens informe de l’estat de la via retro-coclear auditiva i ens ajuda a ajustar les expectatives de la teva rehabilitació."
         button5?.classList.remove("bg-white")
         button5?.classList.add("bg-[#4C6663]")
         button5?.classList.add("text-white")
@@ -160,14 +162,14 @@ import Layout from "../layouts/Layout.astro";
         button6?.classList.add("bg-white", "text-black")
         button6?.classList.remove("text-white")
         if(background)
-            background.style.backgroundImage = "url(imgs/optica/hoya/hoya5.jpg)"
+            background.style.backgroundImage = "url(imgs/audiologia/phonak8.jpg)"
         }
     });
 
     button6?.addEventListener('click', () => {
     if(titleDest && descriptionDest){
-        titleDest.innerHTML = "Lents estètiques i ergonòmiques"
-        descriptionDest.innerHTML = "Lents més primes i lleugeres, amb disseny free-form per optimitzar el camp visual i millorar el confort. Excel·lents per a l'ús diari."
+        titleDest.innerHTML = "Timpanometria"
+        descriptionDest.innerHTML = "Gràcies a la nova electromedicina et podem fer valoracions avançades de l’estat del timpà i de la orella mitjana."
         button6?.classList.remove("bg-white")
         button6?.classList.add("bg-[#4C6663]")
         button6?.classList.add("text-white")
@@ -181,9 +183,10 @@ import Layout from "../layouts/Layout.astro";
         button5?.classList.add("bg-white", "text-black")
         button5?.classList.remove("text-white")
         if(background)
-            background.style.backgroundImage = "url(imgs/optica/hoya/hoya5.jpg)"
+            background.style.backgroundImage = "url(imgs/audiologia/phonak5.jpg)"
         }
     });
+
 </script>
 
 <Layout title="Dos Òptics | Estudi auditiu">
@@ -206,17 +209,19 @@ import Layout from "../layouts/Layout.astro";
         <div class="flex flex-col md:flex-row bg-[#F6F6F6] min-h-[500px] w-full">
             <div class="flex flex-col space-y-4 md:w-1/2 p-6 lg:p-12">
                 <p>No fem una audiometria senzilla per saber l’estat de la teva escolta sinó que fem proves avançades amb l’ajuda de la nostra electromedicina.</p>
-                <button class="bg-white hover:text-white hover:bg-[#4C6663] transition p-2 lg:w-96 rounded shadow" id="btn1">Videotoscopia</button>
+                
+                <button class="bg-[#4C6663] text-white hover:text-white hover:bg-[#4C6663] transition p-2 lg:w-96 rounded shadow" id="btn1">Videotoscopia</button>
                 <button class="bg-white hover:text-white hover:bg-[#4C6663] transition p-2 lg:w-96 rounded shadow" id="btn2">Audiometria tonal liminar via aerea</button>
                 <button class="bg-white hover:text-white hover:bg-[#4C6663] transition p-2 lg:w-96 rounded shadow" id="btn3">Audiometria tonal liminar via òssia</button>
                 <button class="bg-white hover:text-white hover:bg-[#4C6663] transition p-2 lg:w-96 rounded shadow" id="btn4">UCL - Llindar de discomfort</button>
                 <button class="bg-white hover:text-white hover:bg-[#4C6663] transition p-2 lg:w-96 rounded shadow" id="btn5">Logoaudiometria</button>
                 <button class="bg-white hover:text-white hover:bg-[#4C6663] transition p-2 lg:w-96 rounded shadow" id="btn6">Timpanometria</button>
+                <b class="pt-4">També oferim informes complets per al metge i otorrino</b>
             </div>
-            <div class="relative h-96 md:h-auto md:w-1/2 text-white bg-center bg-cover" style={`background-image: url(/imgs/optica/hoya/hoya2.jpg)`} id="background">
+            <div class="relative h-96 md:h-auto md:w-1/2 text-white bg-center bg-cover" style={`background-image: url(/imgs/audiologia/phonak3.jpg)`} id="background">
                 <div class="left-0 absolute flex flex-col justify-center bg-black/40 w-full h-full p-8">
-                    <b class="text-[#BBFF00] pb-2 mt-20" id="titleDest">Audiometria tonal liminal via aerea</b>
-                    <p id="descriptionDest" class="xl:w-1/2">Prova acurada del que escoltes per via aèrea  amb cascos o amb auriculars d’inserció i el que arribes a escoltar més fi en cada freqüència de l’espectre audible humà.</p>
+                    <b class="text-[#BBFF00] pb-2 mt-20" id="titleDest">Videotoscopia</b>
+                    <p id="descriptionDest" class="xl:w-1/2">Podràs veure en directe l’exploració del teu canal auditiu, enregistrem imatges, si cal per adjuntar al teu informe.</p>
                 </div>
             </div>
         </div>

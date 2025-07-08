@@ -1,0 +1,32 @@
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const consent = localStorage.getItem('cookies-accepted');
+    var cookieBanner = document.getElementById('cookie-banner')
+    var acceptCookies = document.getElementById('accept-cookies')
+
+    if (consent === 'true') {
+        loadGoogleMaps();
+        cookieBanner?.classList.add("hidden")
+    }
+
+    acceptCookies?.addEventListener('click', function() {
+        localStorage.setItem('cookies-accepted', 'true');
+        if(cookieBanner){
+            cookieBanner.style.display = 'none';
+            loadGoogleMaps();
+        }
+    });
+    });
+
+    function loadGoogleMaps() {
+        const container = document.getElementById('map-container');
+        if (container) {
+            container.innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1055.7014190805262!2d2.0840156560376584!3d41.548148728704554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4948c940f810b%3A0x4e4100ada8e9c543!2sDos%20%C3%92ptics!5e0!3m2!1ses!2ses!4v1751897533194!5m2!1ses!2ses" style="width: 100%; height: 600px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
+        }
+    }
+</script>
+
+<div id="cookie-banner" class="fixed flex items-center justify-center main_green_bg w-full p-2 text-white bottom-0 shadow z-[999]">
+    <p>Usamos cookies de Google para mostrar mapas interactivos.</p>
+    <button class="bg-green-500 hover:bg-green-700 transition p-2 w-36 ml-8 rounded" id="accept-cookies">Aceptar</button>
+</div>
