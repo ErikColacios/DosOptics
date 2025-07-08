@@ -1,44 +1,54 @@
 ---
-import CallToAction from "../components/CallToAction.astro";
 import Hero from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Dos Òptics | Taps auditius">
+<Layout title="Dos Òptics | Contacte">
     <Hero title1="Vine a la nostra botiga" title2="a Sabadell" backgroundImage="nosaltres/botiga.jpg" text="Estem a la carretera de Terrassa (zona de fàcil aparcament). Fes-nos una visita i explica'ns el que busques, estarem encantats d’ajudar-te, ja sigui si busques unes ulleres noves, necessites una revisió (optomètrica o audiològica) o bé si tens alguna consulta específica."/>
-    <section class="flex bg-[#F6F6F6]">
-        <div class="flex flex-col justify-center space-y-8 w-1/2 p-8 pl-20">
+    <section class="flex flex-col md:flex-row bg-[#F6F6F6]">
+        <div class="grid gap-8 md:gap-0 grid-cols-2 md:grid-cols-1 items-center justify-center md:w-1/2 p-4 md:p-20 pl-12 xl:pl-20">
             <div class="flex flex-col">
-                <b>Direcció</b>
+                <div class="flex items-center space-x-2 pb-1">
+                    <svg height="24px" width="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    <b>Direcció</b>
+                </div>
                 <p>Carretera de Terrassa, 389 - 08205</p>
                 <p>Sabadell BCN</p>
             </div>
             <div class="flex flex-col">
-                <b>Telèfons</b>
+                <div class="flex items-center space-x-2 pb-1">
+                    <svg height="24px" width="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    <b>Telèfons</b>
+                </div>
                 <p>93 727 67 71</p>
                 <p>640 23 28 10</p>
             </div>
             <div class="flex flex-col">
-                <b>Correu electrònic</b>
+                <div class="flex items-center space-x-2 pb-1">
+                    <svg height="24px" width="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g id="Complete"> <g id="mail"> <g> <polyline fill="none" points="4 8.2 12 14.1 20 8.2" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline> <rect fill="none" height="14" rx="2" ry="2" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="18" x="3" y="6.5"></rect> </g> </g> </g> </g></svg>
+                    <b>E-mail</b>
+                </div>
                 <p>info@dosoptics.com</p>
             </div>
-            <div class="flex flex-col">
-                <div class="flex items-center space-x-2">
-                    <svg fill="#000000" height="24px" width="24px" version="1.1" id="Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="WA_Logo"> <g> <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5,3.5C18.25,1.25,15.2,0,12,0C5.41,0,0,5.41,0,12c0,2.11,0.65,4.11,1.7,5.92 L0,24l6.33-1.55C8.08,23.41,10,24,12,24c6.59,0,12-5.41,12-12C24,8.81,22.76,5.76,20.5,3.5z M12,22c-1.78,0-3.48-0.59-5.01-1.49 l-0.36-0.22l-3.76,0.99l1-3.67l-0.24-0.38C2.64,15.65,2,13.88,2,12C2,6.52,6.52,2,12,2c2.65,0,5.2,1.05,7.08,2.93S22,9.35,22,12 C22,17.48,17.47,22,12,22z M17.5,14.45c-0.3-0.15-1.77-0.87-2.04-0.97c-0.27-0.1-0.47-0.15-0.67,0.15 c-0.2,0.3-0.77,0.97-0.95,1.17c-0.17,0.2-0.35,0.22-0.65,0.07c-0.3-0.15-1.26-0.46-2.4-1.48c-0.89-0.79-1.49-1.77-1.66-2.07 c-0.17-0.3-0.02-0.46,0.13-0.61c0.13-0.13,0.3-0.35,0.45-0.52s0.2-0.3,0.3-0.5c0.1-0.2,0.05-0.37-0.02-0.52 C9.91,9.02,9.31,7.55,9.06,6.95c-0.24-0.58-0.49-0.5-0.67-0.51C8.22,6.43,8.02,6.43,7.82,6.43S7.3,6.51,7.02,6.8 C6.75,7.1,5.98,7.83,5.98,9.3c0,1.47,1.07,2.89,1.22,3.09c0.15,0.2,2.11,3.22,5.1,4.51c0.71,0.31,1.27,0.49,1.7,0.63 c0.72,0.23,1.37,0.2,1.88,0.12c0.57-0.09,1.77-0.72,2.02-1.42c0.25-0.7,0.25-1.3,0.17-1.42C18,14.68,17.8,14.6,17.5,14.45z"></path> </g> </g> </g></svg>
-                    <b>What’s App</b>
-                </div>
-                <p>+34 640 23 28 10</p>
+            <div class="flex flex-col bg-[#8EB81C] transition hover:bg-[#789F0B] md:w-48 rounded p-2 text-white">
+                <a href="https://wa.me/+34640232810" target="_blank">
+                    <div class="flex items-center space-x-2 pb-1">
+                        <svg width="24px" height="24px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>whatsapp [#ffffff]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7599.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M259.821,7453.12124 C259.58,7453.80344 258.622,7454.36761 257.858,7454.53266 C257.335,7454.64369 256.653,7454.73172 254.355,7453.77943 C251.774,7452.71011 248.19,7448.90097 248.19,7446.36621 C248.19,7445.07582 248.934,7443.57337 250.235,7443.57337 C250.861,7443.57337 250.999,7443.58538 251.205,7444.07952 C251.446,7444.6617 252.034,7446.09613 252.104,7446.24317 C252.393,7446.84635 251.81,7447.19946 251.387,7447.72462 C251.252,7447.88266 251.099,7448.05372 251.27,7448.3478 C251.44,7448.63589 252.028,7449.59418 252.892,7450.36341 C254.008,7451.35771 254.913,7451.6748 255.237,7451.80984 C255.478,7451.90987 255.766,7451.88687 255.942,7451.69881 C256.165,7451.45774 256.442,7451.05762 256.724,7450.6635 C256.923,7450.38141 257.176,7450.3464 257.441,7450.44643 C257.62,7450.50845 259.895,7451.56477 259.991,7451.73382 C260.062,7451.85686 260.062,7452.43903 259.821,7453.12124 M254.002,7439 L253.997,7439 L253.997,7439 C248.484,7439 244,7443.48535 244,7449 C244,7451.18666 244.705,7453.21526 245.904,7454.86076 L244.658,7458.57687 L248.501,7457.3485 C250.082,7458.39482 251.969,7459 254.002,7459 C259.515,7459 264,7454.51465 264,7449 C264,7443.48535 259.515,7439 254.002,7439" id="whatsapp-[#ffffff]"> </path> </g> </g> </g> </g></svg>
+                        <b>What’s App</b>
+                    </div>
+                    <p>+34 640 23 28 10</p>
+                </a>
             </div>
         </div>
-        <div class="w-1/2">
+        <div class="md:w-2/3 bg-[url(/imgs/nosaltres/maps_placeholder.jpg)] bg-center">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1055.7014190805262!2d2.0840156560376584!3d41.548148728704554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4948c940f810b%3A0x4e4100ada8e9c543!2sDos%20%C3%92ptics!5e0!3m2!1ses!2ses!4v1751897533194!5m2!1ses!2ses" style="width: 100%; height: 600px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
 
     <section class="relative flex flex-col sm:flex-row justify-center items-center space-x-8 lg:space-x-24 p-8 lg:p-20 w-full min-h-[500px] bg-cover bg-center" style=`background-image: url(/imgs/nosaltres/sala_general.jpg)`>
         <div class="flex flex-col items-center absolute top-0 bg-black/50 text-white w-full h-full p-4 md:p-12 justify-center">
-            <h2 class="pb-8 lg:pb-14 text-4xl md:text-5xl">El nostre <span class="main_green_text font-black">horari</span></h2>
-            <div class="flex space-x-8">
+            <h2 class="pb-4 lg:pb-8 text-4xl md:text-5xl">El nostre <span class="main_green_text font-black">horari</span></h2>
+            <div class="flex space-x-8 text-center">
                 <div class="flex flex-col">
                     <b>Dilluns a divendres</b>
                     <p>10:00 - 13:15<br>
@@ -53,16 +63,15 @@ import Layout from "../layouts/Layout.astro";
         </div>
     </section>
 
-    <section class="flex flex-col justify-center text-center items-center bg-[#F6F6F6] min-h-[550px] pt-20 pb-20">
-        <div class="w-1/2">
+    <section class="flex flex-col justify-center text-center items-center bg-[#F6F6F6] min-h-[550px] p-4 pt-20 pb-20">
+        <div class="md:w-1/2">
             <h2 class="text-4xl pb-6 md:text-5xl">Dona una ullada a les nostres xarxes socials!</h2>
             <p>Si no ens pots visitar físicament, també ho pots fer a través del nostre Facebook o Instagram, on podràs veure més novetats del nostre dia a dia, 
-                així com contingut interessant sobre el món de la òptica i l'audiologia.</p>
+                així com contingut interessant sobre el món de l'òptica i l'audiologia.</p>
         </div>
-        <div class="flex space-x-4 pt-8">
-            <button class="main_button">Instagram</button>
-            <button class="main_button">Facebook</button>
+        <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 pt-8">
+            <a href="https://www.instagram.com/dosoptics_/" target="_blank"><button class="main_button flex items-center justify-center"><svg fill="#ffffff" width="28px" height="28px" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M160,128a32,32,0,1,1-32-32A32.03667,32.03667,0,0,1,160,128Zm68-44v88a56.06353,56.06353,0,0,1-56,56H84a56.06353,56.06353,0,0,1-56-56V84A56.06353,56.06353,0,0,1,84,28h88A56.06353,56.06353,0,0,1,228,84Zm-52,44a48,48,0,1,0-48,48A48.05436,48.05436,0,0,0,176,128Zm16-52a12,12,0,1,0-12,12A12,12,0,0,0,192,76Z"></path> </g></svg> Instagram</button></a>
+            <a href="https://www.facebook.com/dosoptics/" target="_blank"><button class="main_button flex items-center justify-center"><svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 12.05C19.9813 10.5255 19.5273 9.03809 18.6915 7.76295C17.8557 6.48781 16.673 5.47804 15.2826 4.85257C13.8921 4.2271 12.3519 4.01198 10.8433 4.23253C9.33473 4.45309 7.92057 5.10013 6.7674 6.09748C5.61422 7.09482 4.77005 8.40092 4.3343 9.86195C3.89856 11.323 3.88938 12.8781 4.30786 14.3442C4.72634 15.8103 5.55504 17.1262 6.69637 18.1371C7.83769 19.148 9.24412 19.8117 10.75 20.05V14.38H8.75001V12.05H10.75V10.28C10.7037 9.86846 10.7483 9.45175 10.8807 9.05931C11.0131 8.66687 11.23 8.30827 11.5161 8.00882C11.8022 7.70936 12.1505 7.47635 12.5365 7.32624C12.9225 7.17612 13.3368 7.11255 13.75 7.14003C14.3498 7.14824 14.9482 7.20173 15.54 7.30003V9.30003H14.54C14.3676 9.27828 14.1924 9.29556 14.0276 9.35059C13.8627 9.40562 13.7123 9.49699 13.5875 9.61795C13.4627 9.73891 13.3667 9.88637 13.3066 10.0494C13.2464 10.2125 13.2237 10.387 13.24 10.56V12.07H15.46L15.1 14.4H13.25V20C15.1399 19.7011 16.8601 18.7347 18.0985 17.2761C19.3369 15.8175 20.0115 13.9634 20 12.05Z" fill="#ffffff"></path> </g></svg> Facebook</button></a>
         </div>
-
     </section>
 </Layout>
