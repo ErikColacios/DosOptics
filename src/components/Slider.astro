@@ -58,18 +58,19 @@
     
 </script>
 
-<div class="swiper w-full  h-full text-white rounded-3xl relative overflow-hidden transition p-2 md:p-8">
+<div class="swiper w-full h-full text-white rounded-3xl relative overflow-hidden transition p-2 md:p-8">
     <div class="swiper-wrapper">
         <!-- Slider content 1 -->
         <div class="swiper-slide h-96">
             <a href="muntures">
-                <div class="custom-inner-shadow main_green_bg w-full h-96 rounded-3xl flex items-center justify-center">
-                <div class="flex flex-col pl-8 pt-12 w-full h-full">
-                    <p class="text-5xl text-shadow-lg">Muntura</p>
-                    <p class="text-4xl mb-4 text-shadow-lg">+ Lents</p>
-                    <p class="text-8xl xl:text-9xl w-64 mb-4 text-shadow-lg">79 €</p>
+                <div class="custom-inner-shadow main_green_bg w-full h-96 rounded-3xl flex items-center justify-center overflow-hidden">
+                    <div class="absolute z-30 flex flex-col pl-8 pt-12 w-full h-full">
+                        <p class="text-5xl text-shadow-lg">Muntura</p>
+                        <p class="text-4xl mb-4 text-shadow-lg">+ Lents</p>
+                        <p class="text-8xl xl:text-9xl w-64 mb-4 text-shadow-lg">79 €</p>
+                    </div>
+                    <img src="/imgs/logos/dosoptics_logo-B.svg" alt="Icono Dos Optics" class="w-64 absolute right-0 z-10 rotate-[0.195rad] opacity-30"/>
                 </div>
-            </div>
             </a>
 
         </div>
@@ -142,6 +143,8 @@
     }
 
     .swiper-button-next{
+        position: absolute;
+        right: 0%;
         width: 72px;
         height: 52px;
         visibility: hidden;
@@ -186,7 +189,7 @@
     /* Cuando la pantalla sea menor de 750px, mostramos siempre los botones y los hacemos transparentes */
     @media only screen and (max-width: 750px) {
         .swiper-button-prev {
-        opacity: 1;
+            opacity: 1;
         }
         .swiper-button-next {
             opacity: 1;

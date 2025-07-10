@@ -5,7 +5,7 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Dos Òptics">
-	<main class="relative flex items-center justify-center w-full min-h-[750px] pt-20 bg-[url(/imgs/nosaltres/sala_general.jpg)] bg-cover bg-center">
+	<main class="relative flex items-center justify-center w-full min-h-[750px] pt-20 bg-[url(/imgs/nosaltres/sala_general.jpg)] bg-cover bg-center overflow-hidden">
 		<div class="flex flex-col items-center justify-center absolute top-0 bg-black/70 text-white w-full h-full p-4 md:p-12 flex xl:justify-center items-center">
 			<div class="flex items-center justify-center text-sm border border-gray-400 rounded-2xl block p-1 w-64 mb-8">
 				<div class="main_green_bg w-2 h-2 rounded-full mr-2"></div>
@@ -15,11 +15,12 @@ import Layout from '../layouts/Layout.astro';
 				<h1>Òptics</h1>
 				<h2>Optometristes</h2>
 				<h3 class="main_green_text font-bold">Especialitzats</h3>
-				<p class="text-base md:w-[750px] mt-8">Treballem per millorar la salut i la qualitat de vida dels nostres pacients mitjançant tecnologies de diagnòstic i exploració avançades, combinades amb l'experiència dels nostres òptics optometristes. 
+				<p class="z-50 text-base md:w-[750px] mt-8">Treballem per millorar la salut i la qualitat de vida dels nostres pacients mitjançant tecnologies de diagnòstic i exploració avançades, combinades amb l'experiència dels nostres òptics optometristes. 
 				Tot això amb l'objectiu d'oferir una atenció professional i propera.</p>
 				<a class="text-base mt-8" href="nosaltres#visitans"><MainButton text="VISITAN'S"/></a>
 			</div>
         </div>
+		<img src="/imgs/logos/dosoptics_logo-G.svg" alt="Icono Dos Optics" class="w-80 absolute right-0 xl:right-[15%] z-10 rotate-[0.195rad] opacity-20 md:opacity-50"/>
 	</main>
 
 	<section class="flex flex-col w-full pt-12 items-center justify-center">

@@ -8,7 +8,8 @@ interface Props {
 const { title } = Astro.props;
 ---
 
-<section class="min-h-[750px] p-12 md:p-20 flex flex-col text-center justify-center items-center bg-[#EEEEEE]">
+<section class="relative min-h-[750px] p-12 md:p-20 flex flex-col text-center justify-center items-center bg-[#EEEEEE] overflow-hidden">
     <h2 class="text-4xl md:text-5xl md:w-[30rem]">{title}</h2>
     <a class="text-base mt-8 text-center" href="contacte"><MainButton text="PARLA AMB NOSALTRES"/></a>
+    <img src="/imgs/logos/dosoptics_logo-G.svg" alt="Icono Dos Optics" class="absolute right-0 xl:right-[15%] w-80 z-10 rotate-[0.195rad] opacity-20 md:opacity-50"/>
 </section>

@@ -9,12 +9,12 @@ interface Props {
 const { title1, title2, backgroundImage, text } = Astro.props;
 ---
 
-<section class=`relative flex items-center justify-center w-full min-h-[750px] pt-20 bg-cover bg-center` style=`background-image: url(/imgs/${backgroundImage})`>
-    <div class="flex flex-col items-center justify-center absolute top-0 bg-black/70 text-white w-full h-full p-4 md:p-12 flex xl:justify-center items-center">
-        <div class="flex flex-col text-5xl md:text-6xl text-center">
-            <h2>{title1}</h2>
-            <h3 class="main_green_text font-bold">{title2}</h3>
-            <p class="text-base md:w-[750px] mt-8">{text}</p>
-        </div>
+<section class=`relative flex items-center justify-center w-full min-h-[750px] pt-20 bg-cover bg-center overflow-hidden` style=`background-image: url(/imgs/${backgroundImage})`>
+    <div class="z-10 absolute top-0 bg-black/70 w-full h-full"></div>
+    <div class="absolute z-50 text-white flex flex-col text-5xl md:text-6xl text-center">
+        <h2>{title1}</h2>
+        <h3 class="main_green_text font-bold">{title2}</h3>
+        <p class="z-50 text-base md:w-[750px] mt-8">{text}</p>
     </div>
+    <img src="/imgs/logos/dosoptics_logo-G.svg" alt="Icono Dos Optics" class="absolute right-0 xl:right-[15%] w-80 z-10 rotate-[0.195rad] opacity-20 md:opacity-50"/>
 </section>
