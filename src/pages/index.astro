@@ -17,7 +17,7 @@ import Layout from '../layouts/Layout.astro';
 				<h3 class="main_green_text font-bold">Especialitzats</h3>
 				<p class="z-50 text-base md:w-[750px] mt-8">Treballem per millorar la salut i la qualitat de vida dels nostres pacients mitjançant tecnologies de diagnòstic i exploració avançades, combinades amb l'experiència dels nostres òptics optometristes. 
 				Tot això amb l'objectiu d'oferir una atenció professional i propera.</p>
-				<a class="text-base mt-8" href="nosaltres#visitans"><MainButton text="VISITAN'S"/></a>
+				<a class="text-base mt-8 z-20" href="/nosaltres#visitans"><MainButton text="VISITAN'S"/></a>
 			</div>
         </div>
 		<img src="/imgs/logos/dosoptics_logo-G.svg" alt="Icono Dos Optics" class="w-80 absolute right-0 xl:right-[15%] z-10 rotate-[0.195rad] opacity-20 md:opacity-50"/>
@@ -29,23 +29,23 @@ import Layout from '../layouts/Layout.astro';
 	</section>
 
 	<section class="w-full relative flex justify-center md:justify-start items-center mt-20 bg-[#4C6663] lg:bg-transparent">
-		<div class="flex flex-col absolute z-20 text-white text-4xl 2xl:text-5xl w-full h-2/3 pl-8 md:h-1/2 lg:pl-32">
+		<div class="flex flex-col absolute z-20 text-white text-4xl 2xl:text-5xl w-full h-2/3 pl-4 md:pl-16 md:h-1/2 lg:pl-32">
 			<p class="sm:w-96 xl:w-[30rem]">També cuidem de la teva salut <span class="main_green_text font-bold">auditiva</span></p>
-			<a class="text-base mt-6" href="audiologia"><MainButton text="AUDIOLOGIA"/></a>
+			<a class="text-base mt-6" href="/estudi_auditiu"><MainButton text="AUDIOLOGIA"/></a>
 		</div>
 		<img src="/imgs/landing/vector2_audiofon.png" alt="Audiofon phonak" class="hidden lg:flex">
-		<img src="/imgs/audiologia/phonak.png" alt="Audiofon phonak 2" class="mt-48 ml-42 md:mt-0 md:ml-96 w-80 lg:hidden">
+		<img src="/imgs/audiologia/phonak_sombra.png" alt="Audiofon phonak 2" class="mt-48 ml-42 md:mt-0 md:ml-96 w-80 lg:hidden">
 	</section>
 
 	<section class="flex flex-col w-full pt-12 items-center justify-center">
 		<h2 class="text-4xl xl:text-5xl text-center xl:w-1/3 m-12 mb-8">El teu estil, la nostra selecció</h2>
-		<a class="text-base" href="optica"><MainButton text="QUÉ OFERIM?"/></a>
+		<a class="text-base" href="/muntures"><MainButton text="QUÉ OFERIM?"/></a>
 		<div class="grid gap-2 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-8">
-			<img src="/imgs/marcas/nike/nike1.jpg" class="w-52 h-64 2xl:w-80 2xl:h-96 rounded-2xl" alt="Nike img">
-			<img src="/imgs/marcas/etnia_barcelona/etnia3.jpg" class="w-52 h-64 2xl:w-80 2xl:h-96 rounded-2xl" alt="Enia img">
-			<img src="/imgs/marcas/lacoste/lacoste1.jpg" class="w-52 h-64 2xl:w-80 2xl:h-96 rounded-2xl" alt="Lacoste img">
-			<img src="/imgs/marcas/woodys/woodys4.jpg" class="w-52 h-64 2xl:w-80 2xl:h-96 rounded-2xl" alt="Woodys img">
-			<img src="/imgs/marcas/carolina_herrera/carolina.jpg" class="w-52 h-64 2xl:w-80 2xl:h-96 rounded-2xl" alt="Carolina herrera img">
+			<img src="/imgs/marcas/nike/nike1.jpg" class="w-52 h-60 2xl:w-80 2xl:h-96 rounded-2xl" alt="Nike img">
+			<img src="/imgs/marcas/etnia_barcelona/etnia3.jpg" class="w-52 h-60 2xl:w-80 2xl:h-96 rounded-2xl" alt="Enia img">
+			<img src="/imgs/marcas/lacoste/lacoste1.jpg" class="w-52 h-60 2xl:w-80 2xl:h-96 rounded-2xl" alt="Lacoste img">
+			<img src="/imgs/marcas/woodys/woodys4.jpg" class="w-52 h-60 2xl:w-80 2xl:h-96 rounded-2xl" alt="Woodys img">
+			<img src="/imgs/marcas/carolina_herrera/carolina.jpg" class="w-52 h-60 2xl:w-80 2xl:h-96 rounded-2xl" alt="Carolina herrera img">
 		</div>
 
 		<div class="grid items-center gap-6 grid-cols-3 md:grid-cols-6 m-12">
@@ -60,13 +60,13 @@ import Layout from '../layouts/Layout.astro';
 
 	<section class="relative flex items-center justify-center w-full min-h-[750px] pt-20 bg-[url(/imgs/nosaltres/sala_general.jpg)] bg-cover bg-center">
 		<div class="absolute top-0 bg-black/30 text-white w-full h-full p-4 md:p-12 flex xl:justify-center items-center">
-			<div class="flex flex-col justify-center items-center bg-[#4C6663]/70 xl:w-1/2 h-3/4 rounded-3xl p-8 xl:p-20">
+			<div class="flex flex-col justify-center items-center bg-[#4C6663]/70 xl:w-1/2 h-3/4 rounded-3xl p-8 pt-12 pb-12 xl:p-20">
 				<h2 class="text-4xl md:text-5xl mb-6 sm:mb-12 text-center">La teva òptica de confiança a <span class="main_green_text font-bold">Sabadell</span></h2>
 				<p class="text-base">Portem més de <span class="main_green_text font-bold">més de 30 anys</span> oferint serveis de revisió ocular per a totes les edats, 
 					venda d’ulleres de tots els tipus i models, lentilles, audifons i més productes d’alta qualitat. </p>
 				<p class="text-base">Ens diferencia l’atenció personalitzada que donem a cada client, la nostra experiencia 
 					amb el tracte de tot tipus de malalties oculars o auditives i el gran catàleg d’ulleres que oferim.  </p>
-				<a class="text-base mt-8" href="nosaltres"><MainButton text="SOBRE NOSALTRES"/></a>
+				<a class="text-base mt-8" href="/nosaltres"><MainButton text="SOBRE NOSALTRES"/></a>
 			</div>
         </div>
 	</section>
