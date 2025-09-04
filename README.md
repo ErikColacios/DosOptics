@@ -6,3 +6,6 @@ The main objective was to represent the diferent services and product areas that
 ![Homepage screenshot](public/imgs/screenshots/screenshot_homepage.jpg)
 
 This is a static webpage. That means the whole content is placed locally and does not run in the server, and also has no database because it has not been necessary so far.
+
+![Homepage screenshot](public/imgs/screenshots/screenshot_muntures.jpg)
+![Homepage screenshot](public/imgs/screenshots/screenshot_estudi_auditiu.jpg)
